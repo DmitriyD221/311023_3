@@ -25,22 +25,22 @@ public:
 };
 
 int main() {
-    Student student1("²âàí", 20);
-    Student student2("Ìàğ³ÿ", 21);
+    Student student1("Mykhailo", 20);
+    Student student2("Mykola", 21);
     Group group1;
     group1.students = new Student[2];
-    group1.students[0] = student1;
+     group1.students[0] = student1;
     group1.students[1] = student2;
     group1.size = 2;
     Group group2 = group1;
-    cout << "²íôîğìàö³ÿ ïğî Ãğóïó 1:" << endl;
+    cout << "Ğ†Ğ½Ñ„Ğ¾Ñ€Ğ¼Ğ°Ñ†Ñ–Ñ Ğ¿Ñ€Ğ¾ Ğ³Ñ€ÑƒĞ¿Ñƒ 1::" << endl;
     for (int i = 0; i < group1.size; i++) {
-        cout << "Ñòóäåíò " << i + 1 << ": " << group1.students[i].name << ", " << group1.students[i].age << " ğîê³â" << endl;
+        cout << "Ã‘Ã²Ã³Ã¤Ã¥Ã­Ã² " << i + 1 << ": " << group1.students[i].name << ", " << group1.students[i].age << " Ã°Ã®ÃªÂ³Ã¢" << endl;
     }
 
-    cout << "²íôîğìàö³ÿ ïğî Ãğóïó 2 (êîï³ÿ Ãğóïè 1):" << endl;
+    cout << "Â²Ã­Ã´Ã®Ã°Ã¬Ã Ã¶Â³Ã¿ Ã¯Ã°Ã® ÃƒÃ°Ã³Ã¯Ã³ 2 (ÃªÃ®Ã¯Â³Ã¿ ÃƒÃ°Ã³Ã¯Ã¨ 1):" << endl;
     for (int i = 0; i < group2.size; i++) {
-        cout << "Ñòóäåíò " << i + 1 << ": " << group2.students[i].name << ", " << group2.students[i].age << " ğîê³â" << endl;
+        cout << "Ğ¡Ñ‚ÑƒĞ´ĞµĞ½Ñ‚" << i + 1 << ": " << group2.students[i].name << ", " << group2.students[i].age << "Ñ€Ğ¾ĞºÑ‹Ğ² << endl;
     }
     return 0;
 }
